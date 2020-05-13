@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalendarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月選択"
+            android:layout_marginRight="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/buttonMonthChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="選択"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorButton2"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <ListView
+        android:id="@+id/listViewCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当月合計"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewMonthTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="円"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/buttonMonthTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="表示"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

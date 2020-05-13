@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">節約の為の献立管理</string>
+
+    <string name="editDate">EDIT_DATE</string>
+    <string name="radioTime">RADIO_TIME</string>
+    <string name="spinnerMenu">SPINNER_MENU</string>
+    <string name="editMenu">EDIT_MENU</string>
+
+    //Intent
+    <string name="intent_key_status">intent_key_status</string>
+    <string name="intent_key_date">intent_key_date</string>
+    <string name="intent_key_time">intent_key_time</string>
+    <string name="intent_key_time_breakfast">intent_key_time_breakfast</string>
+    <string name="intent_key_time_lunch">intent_key_time_lunch</string>
+    <string name="intent_key_time_dinner">intent_key_time_dinner</string>
+
+    <string name="intent_key_number">intent_key_number</string>
+    <string name="intent_key_menuTitle">intent_key_menuTitle</string>
+
+    <string name="intent_key_item1">intent_key_item1</string>
+    <string name="intent_key_item2">intent_key_item2</string>
+    <string name="intent_key_item3">intent_key_item3</string>
+    <string name="intent_key_item4">intent_key_item4</string>
+    <string name="intent_key_item5">intent_key_item5</string>
+    <string name="intent_key_item6">intent_key_item6</string>
+    <string name="intent_key_item7">intent_key_item7</string>
+
+    <string name="intent_key_price1">intent_key_price1</string>
+    <string name="intent_key_price2">intent_key_price2</string>
+    <string name="intent_key_price3">intent_key_price3</string>
+    <string name="intent_key_price4">intent_key_price4</string>
+    <string name="intent_key_price5">intent_key_price5</string>
+    <string name="intent_key_price6">intent_key_price6</string>
+    <string name="intent_key_price7">intent_key_price7</string>
+
+    <string name="intent_key_totalPrice">intent_key_totalPrice</string>
+
+    <string name="intent_key_position">intent_key_position</string>
+
+    <string name="intent_item_date">intent_item_date</string>
+    <string name="intent_item_month">intent_item_month</string>
+
+
+
+    //インテント表示
+    <string name="intent_status_change">献立の修正</string>
+    <string name="intent_status_submit">献立の登録</string>
+
+
+</resources>
