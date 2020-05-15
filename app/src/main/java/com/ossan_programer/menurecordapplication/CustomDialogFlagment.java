@@ -1,4 +1,4 @@
-package com.example.mymenuapplication;
+package com.ossan_programer.menurecordapplication;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;

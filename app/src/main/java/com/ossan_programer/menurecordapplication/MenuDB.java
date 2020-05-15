@@ -1,4 +1,4 @@
-package com.example.mymenuapplication;
+package com.ossan_programer.menurecordapplication;
 
 
 import io.realm.RealmObject;

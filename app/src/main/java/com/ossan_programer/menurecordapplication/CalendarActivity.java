@@ -1,4 +1,4 @@
-package com.example.mymenuapplication;
+package com.ossan_programer.menurecordapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +21,6 @@ import java.util.Calendar;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
-import io.realm.Sort;
 
 public class CalendarActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, View.OnClickListener {
 
@@ -93,19 +92,6 @@ public class CalendarActivity extends AppCompatActivity implements AdapterView.O
         //Sort[] sorts = {Sort.ASCENDING, Sort.DESCENDING, Sort.ASCENDING};
         results = realm.where(MenuDB.class).findAll();
         intLength = results.size();
-
-        //月合計計算
-        for (int i = 0; i < intLength; i++) {
-            //月が同じなら・・
-            if (tvMonth.getText().equals(results.get(i).getStrDate().substring(0,7)) || tvMonth.getText().equals(results.get(i).getStrDate().substring(0,8))) {
-
-                //月の合計金額計算
-                intMonthTotalPrice += results.get(i).getIntTotalPrice();
-            }
-        }
-        tvMonthTotalPrice.setText(String.valueOf(intMonthTotalPrice));
-        intMonthTotalPrice = 0;
-
 
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, lvStr) {
 
