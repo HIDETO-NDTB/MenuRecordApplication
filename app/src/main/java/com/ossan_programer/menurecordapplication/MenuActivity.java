@@ -246,8 +246,14 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     private void addNew() {
 
         //et_Priceをint_Priceに変換
-        int_Price1 = Integer.parseInt(String.valueOf(et_Price1.getText()));
         //金額を空白にするとjava.lang.NumberFormatExceptionで落ちるので、try-catch
+        try {
+            int_Price1 = Integer.parseInt(String.valueOf(et_Price1.getText()));
+        } catch (java.lang.NumberFormatException e) {
+            Toast.makeText(this,"金額を入力して下さい",Toast.LENGTH_LONG).show();
+        } finally {
+
+        }
         try {
             int_Price2 = Integer.parseInt(String.valueOf(et_Price2.getText()));
         } catch (java.lang.NumberFormatException e) {
